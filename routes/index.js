@@ -8,7 +8,8 @@ const pool = new Pool({
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router()
+.get('/', function(req, res, next) {
   res.render('index', { title: 'Bienvenidos a TING 2018' });
 });
 .get('/db', async (req, res) => {
