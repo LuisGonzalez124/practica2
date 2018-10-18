@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> database </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+<body>
+
+<div class="container">
+<h2>Database Results</h2>
+
+<ul>
+    <% results.forEach(function(r) { %>
+        <li><%= r.nombre %> - <%= r.direccion %></li>
+    <% }); %>
+</ul>
+
+</div>
+
+</body>
+</html>
