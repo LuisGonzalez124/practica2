@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Bienvenidos a TING 2018' });
 });
 
-express().get('/db', async (req, res) => {
+router.get('/db', async (req, res) => {
     try {
       const client = await pool.connect()
       const result = await client.query('SELECT * FROM test_tableprueba');

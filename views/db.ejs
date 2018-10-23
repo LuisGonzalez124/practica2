@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">>
  <head>
-    <title> database </title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Database </title>
   </head>
 <body>
 
-<div class="container">
-<h2>Database Results</h2>
+<h1>Database Results</h1>
 
 <ul>
-    <% results.forEach(function(r) { %>
+    <% results.forEach(r => { %>
         <li><%= r.nombre %> - <%= r.direccion %></li>
     <% }); %>
 </ul>
 
-</div>
 
 </body>
 </html>
